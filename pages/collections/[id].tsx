@@ -330,7 +330,7 @@ export const getStaticProps: GetStaticProps<{
   let tokensQuery: paths['/tokens/v5']['get']['parameters']['query'] = {
     collection: id,
     sortBy: 'floorAskPrice',
-    includeTopBid: false,
+    includeTopBid: true,
     limit: 20,
     includeDynamicPricing: true,
     normalizeRoyalties: true,
