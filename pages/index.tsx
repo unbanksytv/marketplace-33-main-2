@@ -37,7 +37,7 @@ const metadata = {
     <meta name="description" content={description} />
   ),
   tagline: (tagline: string | undefined) => (
-    <>{tagline || 'Wen Berachain Ser, LFG'}</>
+    <>{tagline || 'Top 100 Collections Curated by LTL'}</>
   ),
   image: (image?: string) => {
     if (image) {
