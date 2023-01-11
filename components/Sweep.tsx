@@ -272,7 +272,7 @@ const Sweep: FC<Props> = ({ tokens, collection, mutate, setToast }) => {
           {steps ? (
             <ModalCard title="Buy Now" loading={waitingTx} steps={steps} />
           ) : (
-            <Dialog.Content className="fixed inset-0 z-[10000] bg-[#000000b6] px-8 ">
+            <Dialog.Content className="fixed inset-0 z-[10000] bg-[#000000b6] px-8 backdrop-blur-xl">
               <div className="fixed top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 transform">
                 <div className="px-5">
                   <div
@@ -310,7 +310,7 @@ const Sweep: FC<Props> = ({ tokens, collection, mutate, setToast }) => {
                         id="amount"
                         min={1}
                         max={maxInput}
-                        className="hidden w-full flex-grow md:flex"
+                        className="hidden w-full flex-grow md:flex "
                       >
                         <StyledTrack className="bg-neutral-200 dark:bg-neutral-700">
                           <StyledRange className="bg-primary-700" />
@@ -332,7 +332,7 @@ const Sweep: FC<Props> = ({ tokens, collection, mutate, setToast }) => {
                         type="number"
                         name="amount"
                         id="amount"
-                        className="input-primary-outline w-full px-2 dark:border-neutral-600 dark:bg-neutral-900 dark:ring-primary-900  dark:focus:ring-4 md:w-20"
+                        className="input-primary-outline w-full px-2 dark:border-neutral-600 dark:bg-neutral-900 dark:ring-primary-900  dark:focus:ring-4 md:w-20 "
                       />
                     </div>
                     <div className="mb-8 grid h-[215px] grid-cols-5 justify-center gap-2 overflow-y-auto pr-2 md:grid-cols-7">
