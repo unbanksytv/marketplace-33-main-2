@@ -45,7 +45,7 @@ const ModalCard: FC<Props> = ({
         <div className="px-5">
           <div
             className={`mx-auto overflow-hidden border border-neutral-300 bg-white p-11 shadow-xl dark:border-neutral-600 dark:bg-black md:w-[510px] ${
-              DISABLE_POWERED_BY_RESERVOIR ? ' rounded-2xl' : ' rounded-t-2xl'
+              DISABLE_POWERED_BY_RESERVOIR ? ' rounded-sm' : ' rounded-t-sm'
             }`}
           >
             <div className="mb-4 flex items-center justify-between">
@@ -117,7 +117,7 @@ export const ListPrice = ({
 }) => {
   if (floorSellValue) {
     return (
-      <div className="reservoir-label-m flex items-center gap-2 rounded-[8px] bg-[#E2CCFF] px-2 py-0.5 text-[#111827]">
+      <div className="reservoir-label-m flex items-center gap-2 rounded-sm bg-[#E2CCFF] px-2 py-0.5 text-[#111827]">
         <span className="whitespace-nowrap">List Price</span>
         <div>
           <FormatNativeCrypto amount={floorSellValue} logoWidth={7} />
@@ -136,7 +136,7 @@ export const TopOffer = ({
 }) => {
   if (topBuyValue) {
     return (
-      <div className="reservoir-label-m flex items-center gap-2 rounded-[8px] bg-[#E2CCFF] px-2 py-0.5">
+      <div className="reservoir-label-m flex items-center gap-2 rounded-sm bg-[#E2CCFF] px-2 py-0.5">
         <span className="whitespace-nowrap">Current Top Offer</span>
         <div>
           <FormatNativeCrypto amount={topBuyValue} logoWidth={7} />
