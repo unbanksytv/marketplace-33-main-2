@@ -272,7 +272,7 @@ const Sweep: FC<Props> = ({ tokens, collection, mutate, setToast }) => {
           {steps ? (
             <ModalCard title="Buy Now" loading={waitingTx} steps={steps} />
           ) : (
-            <Dialog.Content className="fixed inset-0 z-[10000] bg-[#000000b6] px-8 backdrop-blur-xl">
+            <Dialog.Content className="fixed inset-0 z-[10000] bg-[#000000b6] px-8 backdrop-blur-lg">
               <div className="fixed top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 transform">
                 <div className="px-5">
                   <div
