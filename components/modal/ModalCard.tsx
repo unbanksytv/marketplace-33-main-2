@@ -80,7 +80,7 @@ const ModalCard: FC<Props> = ({
             )}
           </div>
           {!DISABLE_POWERED_BY_RESERVOIR && (
-            <div className="mx-auto flex items-center justify-center rounded-b-2xl bg-neutral-100 py-4 dark:bg-neutral-800 md:w-[510px]">
+            <div className="mx-auto flex items-center justify-center rounded-b-sm bg-neutral-100 py-4 dark:bg-neutral-800 md:w-[510px]">
               <Link
                 href="https://reservoirprotocol.github.io/"
                 legacyBehavior={true}

@@ -22,7 +22,7 @@ const TokenMedia: FC<Props> = ({ token }) => {
       {token?.media === null ? (
         <img
           alt="Token Image"
-          className="w-full rounded-2xl"
+          className="w-full rounded-sm"
           src={optimizeImage(token?.image, 533)}
         />
       ) : (
@@ -48,7 +48,7 @@ const Media: FC<{
   if (extension === 'mp4') {
     return (
       <video
-        className="mb-4 w-full rounded"
+        className="mb-4 w-full rounded-sm"
         poster={tokenImage}
         controls
         autoPlay
@@ -69,7 +69,7 @@ const Media: FC<{
       <div>
         <img
           alt="Token Audio"
-          className="mb-4 w-[533px] rounded-2xl"
+          className="mb-4 w-[533px] rounded-sm"
           src={tokenImage}
         />
         <audio className="mb-4 w-full" controls src={media}>
@@ -106,7 +106,7 @@ const Media: FC<{
     return (
       <img
         alt="Token Image"
-        className="w-full rounded-2xl"
+        className="w-full rounded-sm"
         src={optimizeImage(media, 533)}
       />
     )
