@@ -1,9 +1,9 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
-const FONT_FAMILY = process.env.NEXT_PUBLIC_FONT_FAMILY || 'Satoshi'
-const BODY_FONT_FAMILY = process.env.NEXT_PUBLIC_BODY_FONT_FAMILY || 'Satoshi'
+const FONT_FAMILY = process.env.NEXT_PUBLIC_FONT_FAMILY || 'Boska'
+const BODY_FONT_FAMILY = process.env.NEXT_PUBLIC_BODY_FONT_FAMILY || 'Boska'
 const MONO_FONT_FAMILY =
-  process.env.NEXT_PUBLIC_BODY_FONT_FAMILY || 'Satoshi'
+  process.env.NEXT_PUBLIC_BODY_FONT_FAMILY || 'Boska'
 const PRIMARY_COLOR = process.env.NEXT_PUBLIC_PRIMARY_COLOR || 'default'
 
 const primaryColors = require('./colors')
