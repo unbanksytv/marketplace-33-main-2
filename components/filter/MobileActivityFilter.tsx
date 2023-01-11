@@ -59,10 +59,10 @@ const MobileActivityFilter: FC<Props> = ({
     <Dialog.Root onOpenChange={setOpen} open={open} modal={true}>
       <div className="fixed left-0 bottom-6 z-10 flex w-screen flex-col items-center md:hidden">
         {data && (
-          <Dialog.Trigger className="btn-primary-outline min-w-[200px] rounded-full bg-white py-3 px-12 text-center shadow-[0px_10px_8px_rgba(0,0,0,0.04)] shadow-[_0px_4px_3px_rgba(0,0,0,0.1)] dark:bg-black">
+          <Dialog.Trigger className="btn-primary-outline min-w-[200px] rounded-sm bg-white py-3 px-12 text-center shadow-[0px_10px_8px_rgba(0,0,0,0.04)] shadow-[_0px_4px_3px_rgba(0,0,0,0.1)] dark:bg-black">
             <span>Filter</span>
             {hasEnabledFilters && (
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F5F5F5] text-sm dark:bg-[#262626]">
+              <span className="flex h-6 w-6 items-center justify-center rounded-sm bg-[#F5F5F5] text-sm dark:bg-[#262626]">
                 {enabledFilters.length}
               </span>
             )}
@@ -81,7 +81,7 @@ const MobileActivityFilter: FC<Props> = ({
             <div className="mr-4 flex flex-row items-center">
               <span className="mr-2 text-xl font-semibold">Filters</span>
               {hasEnabledFilters && (
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F5F5F5] text-sm dark:bg-[#262626]">
+                <span className="flex h-6 w-6 items-center justify-center rounded-sm bg-[#F5F5F5] text-sm dark:bg-[#262626]">
                   {enabledFilters.length}
                 </span>
               )}
