@@ -125,7 +125,7 @@ const CartMenu: FC = () => {
       <Popover.Trigger>
         <div className="relative z-10 grid h-8 w-8 items-center justify-center rounded-sm">
           {cartCount > 0 && (
-            <div className="reservoir-subtitle absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary-700 text-white">
+            <div className="reservoir-subtitle absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-sm bg-primary-700 text-white">
               {cartCount}
             </div>
           )}
@@ -139,7 +139,7 @@ const CartMenu: FC = () => {
         <div className="mb-4 flex justify-between">
           <div className="flex items-center">
             <div className="reservoir-h6 mr-3">My Cart</div>
-            <div className="reservoir-subtitle flex h-5 w-5 items-center justify-center rounded-full bg-primary-700 text-white">
+            <div className="reservoir-subtitle flex h-5 w-5 items-center justify-center rounded-sm bg-primary-700 text-white">
               {cartCount}
             </div>
           </div>

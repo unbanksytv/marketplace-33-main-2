@@ -93,7 +93,7 @@ const TokenCard: FC<Props> = ({
       className="group relative mb-6 grid transform-gpu self-start overflow-hidden rounded-sm border border-[#D4D4D4] bg-white transition ease-in hover:-translate-y-0.5 hover:scale-[1.01] hover:shadow-lg hover:ease-out dark:border-0 dark:bg-neutral-800 dark:ring-1 dark:ring-neutral-600"
     >
       {isInCart ? (
-        <div className="absolute top-4 right-4 z-10 flex h-[34px] w-[34px] animate-slide-down items-center justify-center overflow-hidden rounded-full bg-primary-700">
+        <div className="absolute top-4 right-4 z-10 flex h-[34px] w-[34px] animate-slide-down items-center justify-center overflow-hidden rounded-sm bg-primary-700">
           <FaShoppingCart className="h-[18px] w-[18px] text-white" />
         </div>
       ) : null}

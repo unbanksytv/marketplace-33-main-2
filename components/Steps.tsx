@@ -39,7 +39,7 @@ const Steps: FC<Props> = ({ steps }) => {
             ) : firstIncompleteStepIndex === index ? (
               <CgSpinner className="mr-1 ml-1 -mt-0.5 h-8 w-8 flex-none animate-spin text-black dark:text-white" />
             ) : (
-              <div className="reservoir-h6 mr-1 ml-1 flex h-8 w-8 items-center justify-center rounded-full text-center font-headings ring-2 ring-inset ring-neutral-900 dark:text-white  dark:ring-white">
+              <div className="reservoir-h6 mr-1 ml-1 flex h-8 w-8 items-center justify-center rounded-sm text-center font-headings ring-2 ring-inset ring-neutral-900 dark:text-white  dark:ring-white">
                 <div>{index + 1}</div>
               </div>
             )}

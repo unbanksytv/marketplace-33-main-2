@@ -193,7 +193,7 @@ const SearchCollections: FC<Props> = ({
                             'https://via.placeholder.com/30'
                           }
                           alt={`${collection?.name}'s logo.`}
-                          className="h-9 w-9 shrink-0 overflow-hidden rounded-full"
+                          className="h-9 w-9 shrink-0 overflow-hidden rounded-sm"
                         />
                         <span className="reservoir-subtitle ml-2 overflow-hidden text-ellipsis dark:text-white">
                           {collection?.name}

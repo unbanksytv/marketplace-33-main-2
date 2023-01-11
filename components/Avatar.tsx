@@ -10,7 +10,7 @@ type Props = {
 const Avatar: FC<Props> = ({ address, avatar, size = 24 }) => {
   return avatar ? (
     <div
-      className="overflow-hidden rounded-full"
+      className="overflow-hidden rounded-sm"
       style={{
         height: size,
         width: size,
