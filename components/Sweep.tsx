@@ -51,6 +51,7 @@ const StyledSlider = styled(SliderPrimitive.Root, {
   alignItems: 'center',
   userSelect: 'none',
   touchAction: 'none',
+  className: 'bg-blur-xl',
 
   '&[data-orientation="horizontal"]': {
     height: 20,
