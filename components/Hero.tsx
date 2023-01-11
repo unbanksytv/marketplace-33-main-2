@@ -195,7 +195,7 @@ const Hero: FC<Props> = ({ fallback, collectionId }) => {
       <HeroBackground banner={header.banner}>
         <div className="z-10 flex w-full flex-col items-center gap-6">
           <img
-            className={`h-20 w-20 rounded-full ${
+            className={`h-20 w-20 rounded-sm ${
               header.image ? 'visible' : 'hidden'
             }`}
             alt={`${header.name} Logo`}
@@ -289,13 +289,13 @@ const Hero: FC<Props> = ({ fallback, collectionId }) => {
             {!isSmallDevice && (
               <div className="">
                 <DropdownMenu.Root>
-                  <DropdownMenu.Trigger className="btn-primary-outline rounded-lg border border-[#D4D4D4] bg-white p-2 dark:border-[#525252] dark:bg-black dark:ring-[#525252] dark:focus:ring-4">
+                  <DropdownMenu.Trigger className="btn-primary-outline rounded-sm border border-[#D4D4D4] bg-white p-2 dark:border-[#525252] dark:bg-black dark:ring-[#525252] dark:focus:ring-4">
                     <FiMoreVertical className="h-6 w-6 dark:text-[#D4D4D4]" />
                   </DropdownMenu.Trigger>
                   <DropdownMenu.Content
                     sideOffset={4}
                     align="start"
-                    className="min-w-[172px] overflow-hidden rounded-lg border bg-white shadow-md radix-side-bottom:animate-slide-down dark:border-[#525252] dark:bg-neutral-900 md:max-w-[422px]"
+                    className="min-w-[172px] overflow-hidden rounded-sm border bg-white shadow-md radix-side-bottom:animate-slide-down dark:border-[#525252] dark:bg-neutral-900 md:max-w-[422px]"
                   >
                     <DropdownMenu.Item asChild>
                       <button

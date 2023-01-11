@@ -32,7 +32,7 @@ const Toast: FC<Props> = ({ t, toast, data: { kind, message, title } }) => {
         leaveFrom="opacity-100"
         leaveTo="opacity-0"
       >
-        <div className="pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5 dark:bg-black dark:ring-neutral-600">
+        <div className="pointer-events-auto w-full max-w-sm overflow-hidden rounded-sm bg-white shadow-lg ring-1 ring-black ring-opacity-5 dark:bg-black dark:ring-neutral-600">
           <div className="p-4">
             <div className="flex items-start">
               <div className="flex-shrink-0">{icons[kind]}</div>
@@ -46,7 +46,7 @@ const Toast: FC<Props> = ({ t, toast, data: { kind, message, title } }) => {
               </div>
               <div className="ml-4 flex flex-shrink-0">
                 <button
-                  className="inline-flex rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:bg-black dark:text-white"
+                  className="inline-flex rounded-sm bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:bg-black dark:text-white"
                   onClick={() => toast.dismiss(t.id)}
                 >
                   <span className="sr-only">Close</span>
@@ -64,14 +64,14 @@ const Toast: FC<Props> = ({ t, toast, data: { kind, message, title } }) => {
 export default Toast
 
 const icons = {
-  error: <HiOutlineXCircle className="h-6 w-6 rounded-full text-red-400" />,
+  error: <HiOutlineXCircle className="h-6 w-6 rounded-sm text-red-400" />,
   success: (
-    <HiOutlineCheckCircle className="h-6 w-6 rounded-full text-green-400" />
+    <HiOutlineCheckCircle className="h-6 w-6 rounded-sm text-green-400" />
   ),
   warning: (
-    <HiOutlineExclamationCircle className="h-6 w-6 rounded-full text-yellow-400" />
+    <HiOutlineExclamationCircle className="h-6 w-6 rounded-sm text-yellow-400" />
   ),
   info: (
-    <HiOutlineInformationCircle className="h-6 w-6 rounded-full text-blue-400" />
+    <HiOutlineInformationCircle className="h-6 w-6 rounded-sm text-blue-400" />
   ),
 }

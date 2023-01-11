@@ -90,7 +90,7 @@ const TokenCard: FC<Props> = ({
   return (
     <div
       key={`${token?.token?.contract}${token?.token?.tokenId}`}
-      className="group relative mb-6 grid transform-gpu self-start overflow-hidden rounded-[16px] border border-[#D4D4D4] bg-white transition ease-in hover:-translate-y-0.5 hover:scale-[1.01] hover:shadow-lg hover:ease-out dark:border-0 dark:bg-neutral-800 dark:ring-1 dark:ring-neutral-600"
+      className="group relative mb-6 grid transform-gpu self-start overflow-hidden rounded-sm border border-[#D4D4D4] bg-white transition ease-in hover:-translate-y-0.5 hover:scale-[1.01] hover:shadow-lg hover:ease-out dark:border-0 dark:bg-neutral-800 dark:ring-1 dark:ring-neutral-600"
     >
       {isInCart ? (
         <div className="absolute top-4 right-4 z-10 flex h-[34px] w-[34px] animate-slide-down items-center justify-center overflow-hidden rounded-full bg-primary-700">
@@ -122,7 +122,7 @@ const TokenCard: FC<Props> = ({
                   <img
                     src={optimizeImage(collectionImage, imageSize)}
                     alt={`${token?.token?.collection?.name}`}
-                    className="mx-auto mb-4 h-16 w-16 overflow-hidden rounded-full border-2 border-white"
+                    className="mx-auto mb-4 h-16 w-16 overflow-hidden rounded-sm border-2 border-white"
                     width="64"
                     height="64"
                   />

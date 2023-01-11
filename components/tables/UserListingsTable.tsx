@@ -89,7 +89,7 @@ const UserListingsTable: FC<Props> = ({
   return (
     <div className="mb-11 overflow-x-auto">
       {!showActive && (
-        <div className="flex items-center rounded-lg bg-[#F5F5F5] p-4 text-sm dark:bg-[#262626]">
+        <div className="flex items-center rounded-sm bg-[#F5F5F5] p-4 text-sm dark:bg-[#262626]">
           <FiAlertCircle className="mr-2 h-4 w-4 shrink-0 text-[#A3A3A3] dark:text-white" />
           <span>
             An inactive listing is a listing of your NFT that was never canceled
@@ -212,7 +212,7 @@ const UserListingsTableRow = ({
           <a className="flex items-center gap-2">
             <div className="relative h-16 w-16">
               {image && (
-                <div className="aspect-w-1 aspect-h-1 relative overflow-hidden rounded">
+                <div className="aspect-w-1 aspect-h-1 relative overflow-hidden rounded-sm">
                   <img
                     src={optimizeImage(image, 64)}
                     alt="Bid Image"

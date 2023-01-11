@@ -109,7 +109,7 @@ const TrendingCollectionTable: FC<Props> = ({ fallback }) => {
                     <a className="flex items-center gap-2">
                       <img
                         src={optimizeImage(image, 140)}
-                        className="h-[56px] w-[56px] rounded-full object-cover"
+                        className="h-[56px] w-[56px] rounded-sm object-cover"
                       />
                       <div
                         className={`reservoir-h6 overflow-hidden truncate whitespace-nowrap dark:text-white ${

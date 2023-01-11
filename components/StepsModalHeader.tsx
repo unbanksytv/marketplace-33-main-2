@@ -36,7 +36,7 @@ const StepsModalHeader: FC<Props> = ({ data }) => {
         </div>
         <div className="mb-5 flex flex-wrap items-stretch gap-1.5 text-sm">
           {data.token.topBuyValue && (
-            <div className="flex items-center gap-2 rounded-md bg-blue-100 px-2 py-0.5 text-blue-900">
+            <div className="flex items-center gap-2 rounded-sd bg-blue-100 px-2 py-0.5 text-blue-900">
               <span className="whitespace-nowrap">Current Top Offer</span>
               <div className="font-semibold">
                 <FormatNativeCrypto
@@ -47,7 +47,7 @@ const StepsModalHeader: FC<Props> = ({ data }) => {
             </div>
           )}
           {data.token.floorSellValue && (
-            <div className="flex items-center gap-2 rounded-md bg-blue-100 px-2 py-0.5 text-blue-900">
+            <div className="flex items-center gap-2 rounded-sd bg-blue-100 px-2 py-0.5 text-blue-900">
               <span className="whitespace-nowrap">List Price</span>
               <div className="font-semibold">
                 <FormatNativeCrypto

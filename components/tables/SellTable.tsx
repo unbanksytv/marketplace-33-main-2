@@ -136,7 +136,7 @@ const SellTable: FC<Props> = ({ modal, isOwner, address }) => {
                   <a className="flex items-center gap-2">
                     <div className="relative h-14 w-14">
                       {image && (
-                        <div className="aspect-w-1 aspect-h-1 relative overflow-hidden rounded">
+                        <div className="aspect-w-1 aspect-h-1 relative overflow-hidden rounded-sm">
                           <img
                             src={optimizeImage(image, 56)}
                             alt="Bid Image"
@@ -304,7 +304,7 @@ const SellTable: FC<Props> = ({ modal, isOwner, address }) => {
                     <a className="flex items-center gap-2">
                       <div className="relative h-16 w-16">
                         {image && (
-                          <div className="aspect-w-1 aspect-h-1 relative overflow-hidden rounded">
+                          <div className="aspect-w-1 aspect-h-1 relative overflow-hidden rounded-sm">
                             <img
                               src={optimizeImage(image, 64)}
                               alt="Bid Image"

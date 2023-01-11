@@ -277,8 +277,8 @@ const Sweep: FC<Props> = ({ tokens, collection, mutate, setToast }) => {
                   <div
                     className={`mx-auto  border border-neutral-300 bg-white p-11 shadow-xl dark:border-neutral-600 dark:bg-black md:w-[639px] ${
                       DISABLE_POWERED_BY_RESERVOIR
-                        ? 'rounded-2xl'
-                        : 'rounded-t-2xl'
+                        ? 'rounded-sm'
+                        : 'rounded-t-sm'
                     }`}
                   >
                     <div className="mb-4 flex items-center justify-between">
@@ -287,7 +287,7 @@ const Sweep: FC<Props> = ({ tokens, collection, mutate, setToast }) => {
                           <img
                             src={collection?.image}
                             alt=""
-                            className="block h-12 w-12 rounded-full"
+                            className="block h-12 w-12 rounded-sm"
                           />
                           <div className="reservoir-h5 dark:text-white">
                             {collection?.name}
@@ -347,7 +347,7 @@ const Sweep: FC<Props> = ({ tokens, collection, mutate, setToast }) => {
                               token?.token?.image || collection?.image,
                               72
                             )}
-                            className="mb-2 h-[72px] w-full rounded-lg object-cover"
+                            className="mb-2 h-[72px] w-full rounded-sm object-cover"
                             alt={`${token?.token?.name} image`}
                           />
                           <div className="reservoir-subtitle text-center text-xs dark:text-white md:text-sm">
@@ -399,7 +399,7 @@ const Sweep: FC<Props> = ({ tokens, collection, mutate, setToast }) => {
                     </button>
                   </div>
                   {!DISABLE_POWERED_BY_RESERVOIR && (
-                    <div className="mx-auto flex items-center justify-center rounded-b-2xl bg-neutral-100 py-4 dark:bg-neutral-800 md:w-[639px]">
+                    <div className="mx-auto flex items-center justify-center rounded-sm bg-neutral-100 py-4 dark:bg-neutral-800 md:w-[639px]">
                       <Link
                         href="https://reservoirprotocol.github.io/"
                         legacyBehavior={true}

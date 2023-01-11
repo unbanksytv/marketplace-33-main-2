@@ -158,7 +158,7 @@ const SearchCollections: FC<Props> = ({
                 className={`divide-y-[1px] divide-[#D1D5DB] overflow-hidden  border-[#D1D5DB] bg-white dark:divide-neutral-600 dark:border-neutral-600  ${
                   isMobile
                     ? 'top-[72px] border-y dark:bg-black'
-                    : 'absolute top-[50px] z-10 w-full rounded-[8px] border dark:bg-neutral-900'
+                    : 'absolute top-[50px] z-10 w-full rounded-sm border dark:bg-neutral-900'
                 }`}
                 {...getMenuProps()}
               >
@@ -208,7 +208,7 @@ const SearchCollections: FC<Props> = ({
               className={`absolute z-10 w-full divide-y-[1px] divide-[#D1D5DB] overflow-hidden border-[#D1D5DB] bg-white dark:divide-neutral-600 dark:border-neutral-600 ${
                 isMobile
                   ? 'top-[72px] border-y dark:bg-black'
-                  : 'top-[50px] rounded-[8px] border dark:bg-neutral-900'
+                  : 'top-[50px] rounded-sm border dark:bg-neutral-900'
               }`}
               {...getMenuProps()}
             >
@@ -220,7 +220,7 @@ const SearchCollections: FC<Props> = ({
               className={`absolute z-10 w-full divide-y-[1px] divide-[#D1D5DB] overflow-hidden border-[#D1D5DB] bg-white dark:divide-neutral-600 dark:border-neutral-600 ${
                 isMobile
                   ? 'top-[72px] border-y dark:bg-black'
-                  : 'top-[50px] rounded-[8px] border dark:bg-neutral-900'
+                  : 'top-[50px] rounded-sm border dark:bg-neutral-900'
               }`}
               {...getMenuProps()}
             >
@@ -252,7 +252,7 @@ const SearchCollections: FC<Props> = ({
                         collection?.image ?? 'https://via.placeholder.com/30'
                       }
                       alt={`${collection?.name}'s logo.`}
-                      className="h-9 w-9 shrink-0 overflow-hidden rounded-full"
+                      className="h-9 w-9 shrink-0 overflow-hidden rounded-sm"
                     />
                     <span className="reservoir-subtitle ml-2 overflow-hidden text-ellipsis dark:text-white">
                       {collection?.name}

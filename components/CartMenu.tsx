@@ -123,7 +123,7 @@ const CartMenu: FC = () => {
   return (
     <Popover.Root>
       <Popover.Trigger>
-        <div className="relative z-10 grid h-8 w-8 items-center justify-center rounded-full">
+        <div className="relative z-10 grid h-8 w-8 items-center justify-center rounded-sm">
           {cartCount > 0 && (
             <div className="reservoir-subtitle absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary-700 text-white">
               {cartCount}

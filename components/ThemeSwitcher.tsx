@@ -29,7 +29,7 @@ const ThemeSwitcher = () => {
       type="single"
       defaultValue={defaultTheme}
       aria-label="Change theme"
-      className="flex divide-x-[1px] divide-[#D1D5DB] overflow-hidden rounded-[8px] border-[1px] border-[#D1D5DB] dark:divide-neutral-600 dark:border-neutral-600"
+      className="flex divide-x-[1px] divide-[#D1D5DB] overflow-hidden rounded-sm border-[1px] border-[#D1D5DB] dark:divide-neutral-600 dark:border-neutral-600"
     >
       <ToggleGroup.Item
         onClick={() => setTheme('light')}

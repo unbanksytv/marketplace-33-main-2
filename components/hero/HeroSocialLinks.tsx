@@ -39,13 +39,13 @@ const HeroSocialLinks: FC<Props> = ({ refreshCollection, collection }) => {
     return (
       <div className="absolute top-6 right-12">
         <DropdownMenu.Root>
-          <DropdownMenu.Trigger className="rounded-lg border bg-white p-2 dark:border-[#525252] dark:bg-black">
+          <DropdownMenu.Trigger className="rounded-sm border bg-white p-2 dark:border-[#525252] dark:bg-black">
             <FiMoreVertical className="h-6 w-6 dark:text-[#D4D4D4]" />
           </DropdownMenu.Trigger>
           <DropdownMenu.Content
             sideOffset={8}
             align="end"
-            className="min-w-[172px] overflow-hidden rounded-lg border bg-white shadow-md radix-side-bottom:animate-slide-down dark:border-[#525252] dark:bg-neutral-900 md:max-w-[422px]"
+            className="min-w-[172px] overflow-hidden rounded-sm border bg-white shadow-md radix-side-bottom:animate-slide-down dark:border-[#525252] dark:bg-neutral-900 md:max-w-[422px]"
           >
             {typeof social.discordUrl === 'string' && (
               <DropdownMenu.Item asChild>

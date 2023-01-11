@@ -25,7 +25,7 @@ const CommunityDropdown: FC<Props> = ({ collections, defaultCollectionId }) => {
 
       <DropdownMenu.Content
         sideOffset={43}
-        className="max-w-[300px] rounded-2xl bg-white shadow-md radix-side-bottom:animate-slide-down dark:bg-neutral-900 md:max-w-[422px]"
+        className="max-w-[300px] rounded-sm bg-white shadow-md radix-side-bottom:animate-slide-down dark:bg-neutral-900 md:max-w-[422px]"
       >
         {collections
           ?.sort((a, b) => {
@@ -62,7 +62,7 @@ const CommunityDropdown: FC<Props> = ({ collections, defaultCollectionId }) => {
                     <img
                       src={collection.image}
                       alt={`${collection.name} Collection Image`}
-                      className="h-9 w-9 shrink-0 overflow-hidden rounded-full"
+                      className="h-9 w-9 shrink-0 overflow-hidden rounded-sm"
                     />
                     <p className="reservoir-h6 truncate dark:text-white">
                       {collection.name}

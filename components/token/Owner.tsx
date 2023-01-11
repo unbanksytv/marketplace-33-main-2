@@ -31,7 +31,7 @@ const Owner: FC<Props> = ({ details, bannedOnOpenSea, collection }) => {
           token?.attributes?.length >= 2 &&
           token?.kind != 'erc1155' && (
             <div className="mb-3 flex w-full">
-              <div className="hidden min-w-max items-center justify-between whitespace-nowrap rounded-md border border-neutral-300 px-2 py-1.5 text-sm dark:border-neutral-600 sm:flex">
+              <div className="hidden min-w-max items-center justify-between whitespace-nowrap rounded-sm border border-neutral-300 px-2 py-1.5 text-sm dark:border-neutral-600 sm:flex">
                 <img
                   src="/icons/rarity-icon.svg"
                   alt="Rarity icon"
@@ -66,7 +66,7 @@ const Owner: FC<Props> = ({ details, bannedOnOpenSea, collection }) => {
                 </Tooltip.Trigger>
                 <Tooltip.Content
                   sideOffset={5}
-                  className="reservoir-body-2 z-[10000] w-[191px] rounded-2xl bg-neutral-800 py-3 px-4 text-center text-white dark:bg-neutral-100 dark:text-black"
+                  className="reservoir-body-2 z-[10000] w-[191px] rounded-sm bg-neutral-800 py-3 px-4 text-center text-white dark:bg-neutral-100 dark:text-black"
                 >
                   <Tooltip.Arrow className="fill-neutral-800 dark:fill-neutral-100" />
                   Token is not tradeable on OpenSea

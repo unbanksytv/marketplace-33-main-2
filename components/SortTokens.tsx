@@ -58,7 +58,7 @@ const SortTokens: FC = ({}) => {
       <DropdownMenu.Content
         align="end"
         sideOffset={12}
-        className="z-20 w-[200px] divide-y-[1px] divide-[#D1D5DB] overflow-hidden rounded-[8px] border-[1px] border-[#D1D5DB] bg-white shadow-md radix-side-bottom:animate-slide-down dark:divide-neutral-600 dark:border-neutral-600 dark:bg-neutral-800"
+        className="z-20 w-[200px] divide-y-[1px] divide-[#D1D5DB] overflow-hidden rounded-sm border-[1px] border-[#D1D5DB] bg-white shadow-md radix-side-bottom:animate-slide-down dark:divide-neutral-600 dark:border-neutral-600 dark:bg-neutral-800"
       >
         {Object.keys(options).map((key) => (
           <DropdownMenu.Item
@@ -78,7 +78,7 @@ const SortTokens: FC = ({}) => {
                 }
               )
             }}
-            className={`reservoir-label-l reservoir-gray-dropdown-item rounded-none hover:bg-neutral-100 dark:bg-neutral-900 dark:text-white dark:hover:bg-neutral-800`}
+            className={`reservoir-label-l reservoir-gray-dropdown-item rounded-sm hover:bg-neutral-100 dark:bg-neutral-900 dark:text-white dark:hover:bg-neutral-800`}
             aria-label={`Sort by ${key}`}
           >
             {key}

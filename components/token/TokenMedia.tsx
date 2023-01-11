@@ -120,7 +120,7 @@ const Media: FC<{
   ) {
     return (
       <iframe
-        className="mb-6 aspect-square h-full w-full rounded-2xl"
+        className="mb-6 aspect-square h-full w-full rounded-sm"
         height="533"
         width="533"
         src={media}
@@ -132,7 +132,7 @@ const Media: FC<{
   return (
     <img
       alt="Token Image"
-      className="w-full rounded-2xl"
+      className="w-full rounded-sm"
       src={optimizeImage(tokenImage, 533)}
     />
   )

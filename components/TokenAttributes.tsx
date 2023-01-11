@@ -33,7 +33,7 @@ const TokenAttributes: FC<Props> = ({ token, collection, isOwner }) => {
         type="single"
         collapsible
         defaultValue={isOwner ? undefined : 'attributes'}
-        className="col-span-full rounded-2xl border-[1px] border-gray-300 bg-white py-6 dark:border-neutral-600 dark:bg-black"
+        className="col-span-full rounded-sm border-[1px] border-gray-300 bg-white py-6 dark:border-neutral-600 dark:bg-black"
       >
         <Accordion.Item value="attributes">
           <Accordion.Header>
@@ -87,7 +87,7 @@ const TokenAttribute: FC<TokenAttributeProps> = ({
       )}=${formatUrl(`${attribute.value}`)}`}
       legacyBehavior={true}
     >
-      <a className="rounded-lg bg-neutral-100 px-4 py-3 ring-inset ring-blue-600 transition-colors	hover:bg-neutral-300 focus-visible:outline-none focus-visible:ring-2 dark:bg-neutral-800 dark:hover:bg-neutral-600">
+      <a className="rounded-sm bg-neutral-100 px-4 py-3 ring-inset ring-blue-600 transition-colors	hover:bg-neutral-300 focus-visible:outline-none focus-visible:ring-2 dark:bg-neutral-800 dark:hover:bg-neutral-600">
         <div className="text-sm text-primary-700 dark:text-primary-300">
           {attribute.key}
         </div>
