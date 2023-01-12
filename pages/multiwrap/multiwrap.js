@@ -1,7 +1,3 @@
-
-RawBlame
-￼
-￼
 import { useContract, useNFTs, useSDK, Web3Button } from "@thirdweb-dev/react";
 import { useState, useEffect } from "react";
 
