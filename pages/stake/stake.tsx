@@ -9,28 +9,23 @@ import {
     useTokenBalance,
     Web3Button,
   } from "@thirdweb-dev/react";
+import NFTCard from "components/stake/NFTCard";
   import { BigNumber, ethers } from "ethers";
   import type { NextPage } from "next";
   import { useEffect, useState } from "react";
-  import NFTCard from "../components/NFTCard";
-  import {
-    nftDropContractAddress,
-    stakingContractAddress,
-    tokenContractAddress,
-  } from "../consts/contractAddresses";
-  import styles from "../styles/Home.module.css";
+  import styles from "../../../styles/Home.module.css";
   
   const Stake: NextPage = () => {
     const address = useAddress();
     const { contract: nftDropContract } = useContract(
-      nftDropContractAddress,
-      "nft-drop"
+      "0xBB2F2415377ACF8F25cd920Aa7C62E75e106a171",
+      "signature-drop"
     );
     const { contract: tokenContract } = useContract(
-      tokenContractAddress,
+      "0x017BB0aA8B46E49E7262098cAcBF70bBa5830fdf",
       "token"
     );
-    const { contract, isLoading } = useContract(stakingContractAddress);
+    const { contract, isLoading } = useContract("0x297154E4aF2f97b4E4713413C1CfA6a288E05291");
     const { data: ownedNfts } = useOwnedNFTs(nftDropContract, address);
     const { data: tokenBalance } = useTokenBalance(tokenContract, address);
     const { mutateAsync: claimRewards } = useContractWrite(
@@ -60,10 +55,10 @@ import {
   
       const isApproved = await nftDropContract?.isApproved(
         address,
-        stakingContractAddress
+        "0x297154E4aF2f97b4E4713413C1CfA6a288E05291"
       );
       if (!isApproved) {
-        await nftDropContract?.setApprovalForAll(stakingContractAddress, true);
+        await nftDropContract?.setApprovalForAll("0x297154E4aF2f97b4E4713413C1CfA6a288E05291", true);
       }
       await contract?.call("stake", [id]);
     }
@@ -104,7 +99,7 @@ import {
   
             <Web3Button
               action={() => claimRewards([])}
-              contractAddress={stakingContractAddress}
+              contractAddress={"0x297154E4aF2f97b4E4713413C1CfA6a288E05291"}
             >
               Claim Rewards
             </Web3Button>
@@ -132,7 +127,7 @@ import {
                   />
                   <h3>{nft.metadata.name}</h3>
                   <Web3Button
-                    contractAddress={stakingContractAddress}
+                    contractAddress={"0x297154E4aF2f97b4E4713413C1CfA6a288E05291"}
                     action={() => stakeNft(nft.metadata.id)}
                   >
                     Stake
