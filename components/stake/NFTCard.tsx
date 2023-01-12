@@ -8,7 +8,7 @@ import {
   import {
     nftDropContractAddress,
     stakingContractAddress,
-  } from "../consts/contractAddresses";
+  } from "../../../constants/contractAddresses";
   import styles from "../styles/Home.module.css";
   
   interface NFTCardProps {
