@@ -12,7 +12,7 @@ const MyCovalent: React.FC = () => {
 
   useEffect(() => {
     async function fetchData() {
-      const result = await axios.get("https://api.covalenthq.com/v1/1/address/demo.eth/portfolio_v2/?key=ckey_a9971c6f38e540f4aafeb7d498e");
+      const result = await axios.get("https://api.covalenthq.com/v1/1/address/demo.eth/portfolio_v2/?key=COVALENT_API_KEY");
       setData(result.data);
     }
     fetchData();
