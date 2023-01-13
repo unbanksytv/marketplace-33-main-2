@@ -37,7 +37,7 @@ const metadata = {
     <meta name="description" content={description} />
   ),
   tagline: (tagline: string | undefined) => (
-    <>{tagline || 'Top 100 Collections Curated by LTL'}</>
+    <>{tagline || 'Top 100 Collections Curated by GVO'}</>
   ),
   image: (image?: string) => {
     if (image) {
