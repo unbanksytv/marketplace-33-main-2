@@ -37,7 +37,7 @@ const metadata = {
     <meta name="Good Vibes Ohmly" content={description} />
   ),
   tagline: (tagline: string | undefined) => (
-    <>{tagline || 'Top 100 Collections Curated by GVO'}</>
+    <>{tagline || 'Top 33 Collections Curated by GVO'}</>
   ),
   image: (image?: string) => {
     if (image) {
