@@ -34,7 +34,6 @@
     "api": "^5.0.6",
     "downshift": "^6.1.7",
     "ethers": "^5.7.1",
-    "fs-extra": "^11.1.0",
     "lodash.debounce": "^4.0.8",
     "luxon": "^2.3.0",
     "match-sorter": "^6.3.1",
