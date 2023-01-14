@@ -34,7 +34,7 @@ type Props = InferGetStaticPropsType<typeof getStaticProps>
 const metadata = {
   title: (title: string) => <title>{title}</title>,
   description: (description: string) => (
-    <meta name="description" content={description} />
+    <meta name="Good Vibes Ohmly" content={description} />
   ),
   tagline: (tagline: string | undefined) => (
     <>{tagline || 'Top 100 Collections Curated by GVO'}</>
